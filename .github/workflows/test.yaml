@@ -7,12 +7,14 @@ jobs:
 
   job1:
     runs-on: ubuntu-latest
+    environment: test
     steps:
       - name: test
         run: echo job1
 
   job2:
     runs-on: ubuntu-latest
+    environment: test
     steps:
       - name: test
         run: echo job2
