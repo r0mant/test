@@ -1,0 +1,16 @@
+name: Test
+run-name: Test
+
+on:
+  pull_request:
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: none
+
+    steps:
+      - run: 'echo "Hello world"'
